@@ -50,5 +50,4 @@ O comando para parar segue a mesma lógica:<br>
 De forma resumida, é mais simples dar acesso total ao htdocs, com isso você consegue manipular livremente os arquivos dentro da pasta htdocs, por padrão só o usuário root tem essa permissão. 
 
 Dentro da pasta htdocs acesse ***propriedades > permissões***, chegando na aba de permissões altera para que todos possam ler/escrever e excluir/adicionar.
- 
 
