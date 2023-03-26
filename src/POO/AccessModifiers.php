@@ -5,10 +5,6 @@
 *   - protected
 *   - private
 */
-class People 
-{
-    
-}
 
 class User 
 {
