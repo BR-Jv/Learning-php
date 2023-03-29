@@ -12,9 +12,13 @@
     Dentro de cada arquivo busco deixar apenas os trechos de códigos que talvez posso esquecer de como é feito, logo alguns conceitos mais básicos não serão destacados.
 </p>
 
-<h2>Ambiente de desenvolvimento</h2>
+<h2>Ambiente de desenvolvimento no Linux</h2>
 
-[Linux](./Ambiente.md)
+<p>
+  A distribuição linux usada é o Ubuntu 22.04-LTS e Kernel 5.19.0-35
+</p>
+
+[Xampp](/Ambientes/AmbienteXampp.md)
 
 <h2>POO</h2>
 

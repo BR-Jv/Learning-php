@@ -11,7 +11,7 @@ Nele temos as ferramentas:
     <li>Perl</li>
 </ul><br>
 
-Depois de baixado o pacote do site execute os seguintes comandos:<br><br>
+Depois de baixado o pacote do site, vá até o diretório aonde o intalador do xampp está em seguida execute os seguintes comandos:<br><br>
 *Passo 1*:<br> 
 `chmod 755 xampp*.run`
  >  O chmod é um comando que altera as permissões dos arquivos. [Saiba_mais](https://www.hostgator.com.br/blog/comando-chmod-no-linux-como-utilizar-e-para-o-que-ele-serve/)
