@@ -9,6 +9,7 @@
 class User 
 {
     public $login;
+    protected $id;
     private $senha;
 
     function set_login($login){
@@ -17,6 +18,14 @@ class User
     
     function get_login(){
         return $this->login;
+    }
+
+    protected function set_id($id){
+        $this->login = $id;
+    }
+    
+    protected function get_id(){
+        return $this->id;
     }
 
     private function set_senha($senha){

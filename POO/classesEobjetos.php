@@ -1,7 +1,6 @@
 <?php
 class Fruit
 {
-
     //Propriedades
     public $name;
 
@@ -10,14 +9,6 @@ class Fruit
     {
         $this->name = $name;
     }
-
-    /*
-    * A Função destructor executa os comandos ao final do script
-    */
-    function __destruct() 
-    {
-    	echo "The fruit is {$this->name}.";
-  	}
 
     //Métodos
     function set_name($name)
@@ -28,10 +19,16 @@ class Fruit
     {
         return $this->name;
     }
+
+    /*
+    * A Função destructor executa os comandos ao final do script
+    */
+    function __destruct() 
+    {
+    	echo "The fruit is {$this->name}.";
+  	}
+
+    
 }
 
 $apple = new Fruit("apple");
-
-// $apple->set_name("apple");
-
-echo $apple->get_name();
