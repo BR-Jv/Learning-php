@@ -22,6 +22,9 @@
 
 <h2>POO</h2>
 
-1. [Classes_Objetos](/src/POO/classesEobjetos.php)
-2. [Modificadores_de_acesso](/src/POO/AccessModifiers.php)
-3. [Herança](/src/POO/inheritance.php)
+1. [Classes_Objetos](./POO/classesEobjetos.php)
+2. [Modificadores_de_acesso](/POO/ModAcesso.php)
+3. [Herança](/POO/Heran%C3%A7a.php)
+4. [Interfaces](/POO/Interfaces.php)
+5. [ClassesAbstratas](/POO/ClassesAbstratas.php)
+6. [Constantes](/POO/Constantes.php)
