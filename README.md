@@ -20,7 +20,13 @@
 
 [Xampp](/Ambientes/AmbienteXampp.md)
 
-<h2>POO</h2>
+<h2>Assuntos: </h2>
+
+[Regex](/Regex/regex.php)
+[SuperGlobals](/Superglobals/superglobals.php)
+[Arrays](/Arrays/vetores.php)
+
+<h3>POO</h3>
 
 1. [Classes_Objetos](./POO/classesEobjetos.php)
 2. [Modificadores_de_acesso](/POO/ModAcesso.php)
