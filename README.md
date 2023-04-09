@@ -22,9 +22,9 @@
 
 <h2>Assuntos: </h2>
 
-[Regex](/Regex/regex.php)
-[SuperGlobals](/Superglobals/superglobals.php)
-[Arrays](/Arrays/vetores.php)
+1. [Regex](/Regex/regex.php)
+2. [SuperGlobals](/Superglobals/superglobals.php)
+3. [Arrays](/Arrays/vetores.php)
 
 <h3>POO</h3>
 
