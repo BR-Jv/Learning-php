@@ -5,7 +5,6 @@
  * 2. Classes filhas devem ter o mesmo tipo de modificador de acesso ou menor
  */
 
-
 abstract class ParentClass
 {
     abstract protected function method1();
