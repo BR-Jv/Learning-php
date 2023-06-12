@@ -1,35 +1,90 @@
 <?php 
 
-//Definindo uma array padrão
-$arr = array("item1", "item2", "item3");
+//Definindo uma array 
+$arrA = [10, 55, 64];
+$arrB = [55, 73, 8];
+    
+//Array com chaves
+$arr = [
+    'nome' => "Aline Machado",
+    'idade' => 54,
+    'email' => null,
+    'senha' => ",lno0"
+]; 
 
-//Acessando a array atráves do index
-echo $arr[0];
-
-//Criando uma array com chaves
-$arr2 = array("key1"=>"valor1" , "key2" => "valor2", "key3"=>"valor3");
-
-//Acessando uma array com chaves 
-echo $arr2["key2"];
-
-//Percorrendo a array2
-
-foreach($arr2 as $item => $item_value){
-    echo "Chave=".$item." Valor=".$item_value."\n";
+//Percorrendo uma array 
+foreach( $arrA as $item){
+    print_r($item);
 }
 
 //Matriz ou array multidimensional 
-$table = array(
-    //cada nova array representa um linha
-    array("0.0", "0.1", "0.2"), 
-    array("1.0", "1.1", "1.2"),
-    array("2.1", "2.2", "2.2"),
-);
+$dados = [
+    [
+        'nome' => "João Victor",
+        'idade' => 23,
+        'email' => null,
+        'senha' => "22i3a4g"
+    ],
+    [
+        'nome' => "Maria Eduarda",
+        'idade' => 23,
+        'email' => null,
+        'senha' => "123facxz"
+    ],
+    [
+        'nome' => "Pedro Henrique",
+        'idade' => 19,
+        'email' => null,
+        'senha' => "asdc"
+    ]
+];
 
-for ($row = 0; $row < 3; $row++) {
-    for ($col = 0; $col < 3; $col++) {
-        echo $table[$row][$col]." ";
-    }   
-    echo "\n";
-}
+/* 
+ *  Array_Filter() - filtra uma array e retorna uma array com esses valores.  
+ *  https://www.w3schools.com/php/func_array_filter.asp
+ */
+$filter = array_filter($arr, function ($value) {
+    return !is_null($value);
+});
+
+/**
+ * Array_diff() - compara duas ou mais array e retorna a diferença entre elas. 
+ * https://www.w3schools.com/php/func_array_diff.asp
+ */
+array_diff($arrA, $arrB);
+
+/**
+ * Array_intersect() - retorna a intersecção de duas arrays.
+ * https://www.w3schools.com/php/func_array_intersect.asp
+ */
+array_intersect($arrA, $arrB);
+
+/**
+ * Array_column() - retorna os valores de uma coluna.
+ * https://www.w3schools.com/php/func_array_column.asp
+ */
+array_column($dados, 'nome');
+
+/**
+ * Array_map() - retorna uma array com valores que passaram por uma function.
+ * https://www.w3schools.com/php/func_array_map.asp
+ */
+$dobro = array_map(function($value){
+    return $value * 2;
+}, $arrA);
+
+print_r($dobro);
+
+/** 
+ *  https://www.w3schools.com/php/php_ref_array.asp
+ *  
+ *  array_combine($index, $valores) - cria uma array apartir de uma array de index e outra de valores. 
+ *  array_merge() - cria uma nova array apartir de duas ou mais arrays
+ *  array_pad() - define o tamanho e valores padrões de uma array  
+ *  array_shift() - remove e retorna o primeiro valor de uma array. 
+ *  array_unshift() - adiciona um novo valor na primeira posição de uma array.
+ *  array_pop() - deleta o último elemento de uma array.
+ *  array_unset() - remove valores da array, passamos um indice para saber qual valor apagar. 
+ */
+
 
